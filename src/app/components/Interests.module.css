@@ -1,0 +1,21 @@
+.interests {
+    flex: 1; 
+    padding: 1rem;
+  }
+  
+  .interests ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .interests li {
+    color: var(--secondary-text-color);
+    margin: 0.5rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .interests h3,
+    .interests li {
+      text-align: center;
+    }
+  }

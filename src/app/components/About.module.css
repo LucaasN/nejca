@@ -1,0 +1,17 @@
+.about {
+    flex: 3;
+    padding: 1rem;
+  }
+  
+  .about p {
+    color: var(--secondary-text-color);
+    text-align: left; 
+  }
+  
+  @media (max-width: 768px) {
+    .about h3,
+    .about p{
+      text-align: center;
+    }
+  }
+  
