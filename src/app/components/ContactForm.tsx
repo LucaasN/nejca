@@ -20,10 +20,18 @@ const ContactForm: React.FC = () => {
       return;
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMessage('Por favor, introduce un email valido.');
+      setSuccessMessage('');
+      return;
+    }
+
+    setErrorMessage('');
     setName('');
     setEmail('');
     setMessage('');
-    setSuccessMessage('Mensaje enviado con exito! Gracias por comunicarte =)');
+    setSuccessMessage('Mensaje enviado con exito!');
   };
 
   return (
@@ -37,23 +45,30 @@ const ContactForm: React.FC = () => {
         <input
             type="text"
             id="name"
+            placeholder="John Doe"
             value={name}
             onChange={e => setName(e.target.value)}
+            required
         />
         
         <label htmlFor="email">Email</label>
         <input
             type="email"
             id="email"
+            placeholder="johndoe@email.com"
             value={email}
             onChange={e => setEmail(e.target.value)}
+            required
         />
         
         <label htmlFor="message">Mensaje</label>
         <textarea
             id="message"
+            placeholder="Your message..."
             value={message}
             onChange={e => setMessage(e.target.value)}
+            rows={5}
+            required
         />
         
         <button type="submit" onClick={handleSubmit}>Enviar</button>

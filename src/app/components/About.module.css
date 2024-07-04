@@ -6,10 +6,11 @@
   .about p {
     color: var(--secondary-text-color);
     text-align: left; 
+    line-height: 1.5;
   }
   
   @media (max-width: 768px) {
-    .about h3,
+    .about h2,
     .about p{
       text-align: center;
     }

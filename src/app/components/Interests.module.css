@@ -14,7 +14,7 @@
   }
 
   @media (max-width: 768px) {
-    .interests h3,
+    .interests h2,
     .interests li {
       text-align: center;
     }
