@@ -2,6 +2,12 @@
     flex: 3;
     padding: 1rem;
   }
+
+  .about h2 span{
+    border-bottom: 1px solid var(--border-color);
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.4rem;
+  }
   
   .about p {
     color: var(--secondary-text-color);

@@ -7,7 +7,11 @@ interface InterestsProps {
 const Interests: React.FC<InterestsProps> = ({ interests }) => {
   return (
     <section className={styles.interests}>
-      <h2>Intereses</h2>
+      <h2>
+        <span>
+          Intereses
+        </span>
+      </h2>
       <ul>
         {interests.map((interest, index) => (
           <li key={index}>{interest}</li>

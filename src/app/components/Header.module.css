@@ -17,12 +17,15 @@
   .header ul {
     display: flex;
     flex-direction: column;
-    gap: 1;
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
+  .header ul li {
+    padding-bottom: 0.25rem;
+  }
+
   .header a {
     color: var(--text-color);
     text-decoration: none;
@@ -32,6 +35,11 @@
  @media (max-width: 768px) {
     .header {
       flex-direction: column;
+    }
+
+    .header ul {
+      flex-direction: row;
+      justify-content: space-between;
     }
     
     .header li {

@@ -25,6 +25,14 @@
     color: var(--text-color);
   }
 
+  .contactForm input:focus,
+  .contactForm textarea:focus,
+  .contactForm input:focus-visible,
+  .contactForm textarea:focus-visible {
+    border: 1px solid var(--border-color);
+    outline: none;
+  }
+
   .contactForm textarea {
     resize: none;
   }

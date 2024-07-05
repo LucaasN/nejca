@@ -2,6 +2,12 @@
     flex: 1; 
     padding: 1rem;
   }
+
+  .interests h2 span{
+    border-bottom: 1px solid var(--border-color);
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.4rem;
+  }
   
   .interests ul {
     list-style-type: none;
