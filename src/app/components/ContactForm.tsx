@@ -36,7 +36,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <section className={styles.contactForm}>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} data-testid="contact-form">
 
         {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
         {successMessage && <p className={styles.successMessage}>{successMessage}</p>}

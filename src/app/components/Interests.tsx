@@ -12,7 +12,7 @@ const Interests: React.FC<InterestsProps> = ({ interests }) => {
           Intereses
         </span>
       </h2>
-      <ul>
+      <ul data-testid="interests-list">
         {interests.map((interest, index) => (
           <li key={index}>{interest}</li>
         ))}
