@@ -4,7 +4,7 @@ Instalacion y ejecucion:
 
 ```
 git clone https://github.com/LucaasN/prueba-tecnica-nejca.git
-cd nejca
+cd prueba-tecnica-nejca
 npm install
 ```
 
